@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .contact-info {
+            display: inline-block;
+            background: #f8f9fa;
+            padding: 15px 25px;
+            border-radius: 25px;
+            border: 2px solid #e9ecef;
+        }
+
+        .contact-info strong {
+            color: #495057;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h2 {
+            color: #495057;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .card li:last-child {
+            border-bottom: none;
+        }
+
+        .card li:before {
+            content: "▸";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .footer h3 {
+            color: #495057;
+            margin-bottom: 15px;
+        }
+
+        .footer p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-link:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>Data Science Portfolio</h1>
+            <p>Showcasing innovative data science projects and analytical expertise</p>
+            <div class="contact-info">
+                <strong>Contact:</strong> <!--email_off-->21f1003035@ds.study.iitm.ac.in<!--/email_off-->
+            </div>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h2>🎓 Education & Background</h2>
+                <ul>
+                    <li>Data Science Program at IIT Madras</li>
+                    <li>Strong foundation in statistical analysis and machine learning</li>
+                    <li>Experienced in handling large-scale datasets</li>
+                    <li>Passionate about extracting insights from complex data</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🔧 Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">R</div>
+                    <div class="skill-tag">SQL</div>
+                    <div class="skill-tag">Pandas</div>
+                    <div class="skill-tag">NumPy</div>
+                    <div class="skill-tag">Scikit-learn</div>
+                    <div class="skill-tag">TensorFlow</div>
+                    <div class="skill-tag">Matplotlib</div>
+                    <div class="skill-tag">Seaborn</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">Jupyter</div>
+                    <div class="skill-tag">Docker</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📊 Featured Projects</h2>
+                <ul>
+                    <li><strong>Predictive Analytics Model</strong> - Built machine learning models to forecast business metrics with 85% accuracy</li>
+                    <li><strong>Customer Segmentation Analysis</strong> - Applied clustering algorithms to identify key customer segments</li>
+                    <li><strong>Time Series Forecasting</strong> - Developed ARIMA and LSTM models for demand prediction</li>
+                    <li><strong>A/B Testing Framework</strong> - Designed statistical testing methodology for product optimization</li>
+                </ul>
+                <a href="#" class="project-link">View All Projects</a>
+            </div>
+
+            <div class="card">
+                <h2>🏆 Achievements & Certifications</h2>
+                <ul>
+                    <li>Dean's List for Academic Excellence</li>
+                    <li>Kaggle Competition Top 10% Finish</li>
+                    <li>Google Analytics Certified</li>
+                    <li>AWS Cloud Practitioner</li>
+                    <li>Published research paper on machine learning applications</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🔬 Research Interests</h2>
+                <ul>
+                    <li>Natural Language Processing and Text Analytics</li>
+                    <li>Computer Vision and Image Recognition</li>
+                    <li>Reinforcement Learning Applications</li>
+                    <li>Statistical Modeling and Bayesian Methods</li>
+                    <li>Big Data Analytics and Distributed Computing</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>💼 Professional Experience</h2>
+                <ul>
+                    <li><strong>Data Science Intern</strong> - Applied machine learning to solve real-world business problems</li>
+                    <li><strong>Research Assistant</strong> - Conducted statistical analysis for academic research projects</li>
+                    <li><strong>Analytics Consultant</strong> - Provided data-driven insights to improve decision making</li>
+                    <li><strong>Teaching Assistant</strong> - Mentored students in data science methodologies</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <h3>Let's Connect</h3>
+            <p>I'm always interested in discussing data science opportunities and collaborations.</p>
+            <p><strong>Email:</strong> <!--email_off-->21f1003035@ds.study.iitm.ac.in<!--/email_off--></p>
+            <p>Hosted on GitHub Pages | Last updated: May 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add smooth scrolling and interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animation for cards
+            const cards = document.querySelectorAll('.card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+
+            // Add click tracking for project links
+            document.querySelectorAll('.project-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Project portfolio coming soon! This is a demonstration page.');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
